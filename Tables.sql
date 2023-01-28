@@ -1,4 +1,4 @@
-----CREATE ----Database,Tables,Views,Index,Stored Procedures,Triggers
+----CREATE ----Database,Tables
 
 ---Database
 
