@@ -69,3 +69,12 @@ EXEC sp_help Person;
 Select TABLE_NAME ,Constraint_type,Constraint_name
 From INFORMATION_SCHEMA.TABLE_CONSTRAINTS
 Where (TABLE_NAME = 'Product' )
+
+
+-----Check the Table in a Datebase-------------
+use customer
+
+SELECT 
+    *
+FROM
+    information_schema.tables;
