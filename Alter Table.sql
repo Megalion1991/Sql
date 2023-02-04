@@ -17,7 +17,27 @@ Drop Column District
 
 ------Rename Column---------------
 
-EXEC sp_rename 
-    @objname = 'dbo.Country', 
-    @newname = 'State', 
-    @objtype = 'COLUMN';
+Select * from Person
+
+exec sp_rename 'Person.first_name','First_name','Column'
+
+----Rename for other database---------
+--Alter Table tbl_name to new_name
+
+
+----Alter/Modify Datatype-----
+
+Alter table Person
+Alter column First_name varchar(max)
+
+Select * from Person
+
+----Add or drop constraint---------
+
+Alter table Person
+Add constraint primary_change default(address_)
+
+----Drop Constraint---------
+
+Alter table Person
+Drop constraint constraint_name  (check constraint list)
